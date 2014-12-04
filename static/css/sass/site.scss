@@ -46,6 +46,7 @@ h1 {
         font-size: 2.75em;
     }
 }
+<<<<<<< HEAD
 h2 {
     font-size: 2.25em;
     letter-spacing: -1px;
@@ -55,6 +56,8 @@ h2 {
         font-size: 1.75em;
     }
 }
+=======
+>>>>>>> 5f1f4a41556ee960312614919a8963d2b1ecabf1
 .lead {
     text-shadow: 0 1px 1px rgba(0,0,0,.5);
     font-size: 2.25em;
@@ -62,6 +65,7 @@ h2 {
         font-size: 1.5em;
     }
 }
+<<<<<<< HEAD
 .projects {
     @include clearfix;
     @extend %default-ul;
@@ -95,6 +99,10 @@ h2 {
 .external_jumps {
     padding-top: 50px;
     clear: both;
+=======
+.external_jumps {
+    margin-top: 50px;
+>>>>>>> 5f1f4a41556ee960312614919a8963d2b1ecabf1
     li {
         display: inline;
         margin-right: 25px;
