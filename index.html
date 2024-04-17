@@ -18,17 +18,6 @@
         background-color: rgba(182, 220, 97, 1);
     }
     </style>
-    <script type="text/javascript">
-        // Insert current year
-        const options = { year: 'numeric' };
-        const currentYear = new Date().toLocaleDateString('en-US', options);
-        const yearSpan = document.getElementById('current-year');
-        if (yearSpan) {
-            yearSpan.textContent = currentYear;
-        } else {
-            console.error('Span element with ID "currentYear" not found.');
-        }
-    </script>
 </head>
 <body id="index">
 <div class="container">
@@ -69,7 +58,7 @@
 
 <footer>
     <div class="container">
-        <p>&copy; <a href="mailto:patrick@patrickbeeson.com">Patrick Beeson</a> <span id="current-year"></span>.</p>
+        <p>&copy; <a href="mailto:patrick@patrickbeeson.com">Patrick Beeson</a> 2024.</p>
         <a class="django_badge" href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangosite80x15_grey.gif" border="0" alt="A Django site." title="A Django site." /></a>
     </div>
 </footer>
