@@ -18,6 +18,17 @@
         background-color: rgba(182, 220, 97, 1);
     }
     </style>
+    <script type="text/javascript">
+        // Insert current year
+        const options = { year: 'numeric' };
+        const currentYear = new Date().toLocaleDateString('en-US', options);
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+            yearSpan.textContent = currentYear;
+        } else {
+            console.error('Span element with ID "currentYear" not found.');
+        }
+    </script>
 </head>
 <body id="index">
 <div class="container">
@@ -36,8 +47,8 @@
         </ul> -->
         <div class="bio">
             <h2>Bio</h2>
-            <p>Patrick Beeson is an engineering manager, full-stack software engineer and digital strategist.</p>
-            <p>Until recently, Beeson was an engineering leader and founding engineer for <a href="https://www.crowdstreet.com">CrowdStreet</a>, a commercial real estate investing platform headquartered in Austin, TX.</p>
+            <p>Patrick Beeson is an engineering manager with Apploi where he builds a workforce management platform for healthcare.</p>
+            <p>Previously Beeson was an engineering leader and founding engineer for <a href="https://www.crowdstreet.com">CrowdStreet</a>, a commercial real estate investing platform headquartered in Austin, TX.</p>
             <p>Prior to his move west Beeson was the director of digital strategy for <a href="http://thevariable.com">The Variable</a> creative agency in Winston-Salem, NC where he developed responsive web applications and digital strategy informed by consumer behavior and proprietary research.</p>
             <p>Beeson was formerly the director of digital communications for <a href="http://wfu.edu">Wake Forest University</a> where he provided creative vision and direction for a team of web designers and application developers who are creating and maintaining an engaging digital presence that represents the University’s brand.</p>
             <p>Before arriving in Winston-Salem, Beeson was the webmaster for the <a href="http://research.vtc.vt.edu">Virginia Tech Carilion Research Institute</a>, where he built a content management system (CMS) for the VTCRI and its labs, and led web initiatives.</p>
@@ -58,7 +69,7 @@
 
 <footer>
     <div class="container">
-        <p>&copy; <a href="mailto:patrick@patrickbeeson.com">Patrick Beeson</a> 2023.</p>
+        <p>&copy; <a href="mailto:patrick@patrickbeeson.com">Patrick Beeson</a> <span id="current-year"></span>.</p>
         <a class="django_badge" href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangosite80x15_grey.gif" border="0" alt="A Django site." title="A Django site." /></a>
     </div>
 </footer>
