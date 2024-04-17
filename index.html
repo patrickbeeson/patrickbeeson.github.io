@@ -22,7 +22,7 @@
         // Insert current year
         const options = { year: 'numeric' };
         const currentYear = new Date().toLocaleDateString('en-US', options);
-        const yearSpan = document.getElementById('currentYear');
+        const yearSpan = document.getElementById('current-year');
         if (yearSpan) {
             yearSpan.textContent = currentYear;
         } else {
