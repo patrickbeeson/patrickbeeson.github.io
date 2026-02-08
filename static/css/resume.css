@@ -1,0 +1,387 @@
+body.resume-page {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #7e94a1;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header.resume-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header.resume-header h1 {
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+    font-size: 4.75em;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    text-transform: none; /* Matching home page casing */
+}
+
+body.resume-page a {
+    color: rgba(182, 220, 97, 1);
+    text-decoration: underline;
+}
+
+body.resume-page a:hover {
+    text-decoration: none;
+    color: rgba(182, 220, 97, 1);
+}
+
+.contact-info-top {
+    margin-top: 15px;
+    color: white;
+}
+
+.contact-info-top p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.contact-info-top a {
+    /* Inherits from body a, but keeping selector for specificity if needed */
+}
+
+.resume-sidebar {
+    flex: 0 0 300px;
+    padding-right: 40px;
+}
+
+.resume-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.resume-section h2 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 5px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job-header {
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-weight: 700;
+    font-size: 1.25em;
+    margin: 0;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.job-company-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+    margin-top: 2px;
+}
+
+.job-company {
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+}
+
+.job-dates {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95em;
+}
+
+.job-bullets {
+    margin: 12px 0;
+    padding-left: 18px;
+    list-style-type: none;
+}
+
+.job-bullets li {
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 1em;
+}
+
+.job-bullets li::before {
+    content: "»";
+    position: absolute;
+    left: -18px;
+    color: rgba(182, 220, 97, 1);
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.tech-tag {
+    font-size: 1em;
+    color: white;
+}
+
+.tech-tag::after {
+    content: "•";
+    margin-left: 10px;
+    color: rgba(182, 220, 97, 1);
+}
+
+.tech-tag:last-child::after {
+    content: "";
+}
+
+.sidebar-text {
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 30px 20px;
+    }
+    .resume-sidebar {
+        flex: 1 1 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .resume-main {
+        flex: 1 1 100%;
+    }
+    header.resume-header h1 {
+        font-size: 2.75em;
+    }
+}
+
+/* Matching home page logo */
+.branding {
+    width: 100%;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.branding img {
+    width: 100px;
+    height: 71.5px;
+}
+
+@media (max-width: 768px) {
+    .branding {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+/* Footer and Social Links */
+.resume-footer-links {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.external_jumps {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.external_jumps li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.external_jumps li a img {
+    opacity: 0.25;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.external_jumps li a:hover img {
+    opacity: 1;
+}
+
+.external_jumps li img.github {
+    width: 32px;
+    height: 32px;
+}
+
+.external_jumps li img.linkedin {
+    width: 36px;
+    height: 32px;
+}
+
+footer {
+    width: 100%;
+    padding: 25px 0;
+    background-color: transparent;
+}
+
+footer .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: rgba(182, 220, 97, 1);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: rgba(182, 220, 97, 1);
+    text-decoration: none;
+}
+
+.django_badge img {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body.resume-page {
+        background-color: white !important;
+        color: black !important;
+        text-shadow: none !important;
+    }
+
+    .resume-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        background-color: white !important;
+    }
+
+    .branding {
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .branding img {
+        filter: invert(1) brightness(0); /* Turn white logo black */
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    header.resume-header {
+        margin-bottom: 30px !important;
+    }
+
+    header.resume-header h1 {
+        color: black !important;
+        text-shadow: none !important;
+        font-size: 2.5em !important;
+    }
+
+    .contact-info-top {
+        color: black !important;
+    }
+
+    .contact-info-top a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+    body.resume-page a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+    /* Hide web-only elements */
+    .branding,
+    .resume-footer-links, 
+    footer, 
+    .contact-info-top p small,
+    .resume_download {
+        display: none !important;
+    }
+
+    .resume-section h2 {
+        color: black !important;
+        border-bottom: 1px solid #ccc !important;
+        text-shadow: none !important;
+        font-size: 1.2em !important;
+        margin-top: 20px !important;
+    }
+
+    .job-title {
+        color: black !important;
+        text-shadow: none !important;
+    }
+
+    .job-company-row {
+        color: #333 !important;
+    }
+
+    .job-dates {
+        color: #555 !important;
+    }
+
+    .job-bullets li::before {
+        color: black !important;
+    }
+
+    .tech-tag {
+        color: black !important;
+    }
+
+    .tech-tag::after {
+        color: #ccc !important;
+    }
+
+    /* Ensure layout stays intact */
+    .resume-sidebar {
+        flex: 0 0 250px !important;
+    }
+    
+    .resume-main {
+        flex: 1 !important;
+    }
+
+    @page {
+        margin: 0.5in;
+    }
+}
